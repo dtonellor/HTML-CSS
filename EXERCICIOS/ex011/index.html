@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style> body {background-color: darkgrey;}</style>
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Testando imagens de tamanhos diferente <br>
+    para dispositivos diferentes.</p>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="img dinâmica">
+    </picture>
+    <hr>
+    <h1>Adicionando Áudios</h1>
+    <p>Adicionando músicas e audios com a tag audio e parametros controls autoplay dentro da tag</p>
+    <audio src="midias/Rain Water Dripping Fast Hard.mp3" controls autoplay></audio>
+</body>
+</html>

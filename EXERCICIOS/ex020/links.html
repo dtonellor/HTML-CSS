@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pseudo Elementos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: blueviolet;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: deeppink;
+        }
+        a:active {
+            color: chartreuse;
+        }
+        .especial {
+            background-color: rgba(95, 158, 160, 0.638);
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::before {
+            content: ' ★';
+        }
+        .especial::after {
+            content: ' ★';
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@lorelayfox" class="especial">Acesse o canal LorelayFox</a></li>
+        <li><a href="https://www.youtube.com/@divadepressao">Acesse o canal DivaDepressão</a></li>
+        <li><a href="https://www.youtube.com/@SamiraClose">Acesse o canala SamiraClose</a></li>
+    </ul>
+    
+</body>
+</html>

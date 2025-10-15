@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    /* height: 100%; */
+    font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+    width: 600px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #564f4996;
+
+}
+
+h1 {
+    text-align: center;
+    color: #44474D;
+    font-size: 60px;
+    text-shadow: 5px 5px 5px #44474D;
+}
+
+h2 {
+    text-align: center;
+    color: #3D5E6B;
+}
+
+p{
+    text-align: justify;
+}
+
+body {
+    background-image: linear-gradient(to right, #D5D0C4, #877C73);
+}
