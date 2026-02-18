@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU com MQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="est/style.css">
+    <link rel="stylesheet" href="esti/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Menu Responsivo com MQ</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <menu id="itens">
+                <ul>
+                    <li><a href="#">Opção 1</a></li>
+                    <li><a href="#">Opção 2</a></li>
+                    <li><a href="#">Opção 3</a></li>
+                    <li><a href="#">Opção 4</a></li>
+                    <li><a href="#">Opção 5</a></li>
+                </ul>
+            </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Texto de lorem</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quam dolore exercitationem nostrum adipisci similique temporibus amet ipsum sunt earum! Officiis numquam sint labore maxime nemo doloribus eaque assumenda illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquid rerum minus mollitia nulla possimus in voluptatem consequuntur quaerat eligendi cupiditate sed. Fugit, quam officiis voluptates excepturi iste reiciendis rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio consequuntur quos sed earum eligendi facilis corrupti magni dolore velit iste, ipsum, nulla unde a, ab deleniti minima amet placeat? Atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum maiores placeat non possimus id libero cupiditate fugiat at eligendi quisquam, magni molestiae consequatur accusamus sunt expedita dicta, neque molestias omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, earum? Aperiam, similique obcaecati rem non temporibus ea, velit ratione, eaque autem reiciendis rerum officia maxime illum reprehenderit doloribus. Praesentium, distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis reprehenderit mollitia earum repellendus enim amet itaque, eum voluptates adipisci vel quis, illo quisquam maxime. Atque nesciunt sequi nulla. Dicta? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto aliquid quaerat dolores ducimus reprehenderit maiores id odio commodi consectetur sed. Accusamus, quia. Dicta iure ea quis suscipit repellat et dolore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla magni reiciendis, id eos nemo possimus voluptatum ipsum quos. Laudantium tempora dolore officia quam voluptas fugit maxime pariatur est cumque eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rem nobis, ad doloribus fugiat voluptatem rerum eligendi, sapiente magnam repellat libero, dignissimos laborum fuga velit. Est doloribus repudiandae magnam cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fugit nisi iste illo culpa aliquid optio at dolor officia assumenda odit velit quas, eligendi quidem dolore repellendus? Libero, harum ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi labore quos enim unde assumenda aut et dolor magnam placeat? Fugit vero esse in voluptatum exercitationem minima possimus itaque quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nisi repudiandae officiis commodi. Similique delectus illum repudiandae commodi ducimus. In, facilis recusandae assumenda vel minima repellendus debitis sit quod iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolore, vero, repellendus sint delectus, amet similique atque aliquam modi reiciendis eius praesentium quas nesciunt molestias eum aut cupiditate mollitia ullam.</p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu () {
+           if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+           } else {
+            itens.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>
