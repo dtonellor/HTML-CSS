@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.container1 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            fl
+            justify-content: flex-start;
+            
+        }
+
+        div.container2 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            
+        }
+
+        div.container3 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            
+        }
+        
+        div.container4 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            
+        }
+
+        div.container5 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            
+        }
+
+        div.container6 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            
+        }
+
+        div.container7 {
+            background-color: aqua;
+            display: flex;
+            height: 100px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            
+        }
+
+        div.container8 {
+            background-color: aqua;
+            display: flex;
+            height: 100px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            
+        }
+
+        div.container9 {
+            background-color: aqua;
+            display: flex;
+            height: 100px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: flex-end;
+            
+        }
+
+        div.container10 {
+            background-color: aqua;
+            display: flex;
+            height: 100px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            
+        }
+
+        div.item {
+            background-color: blue;
+            
+            border: 1px solid black;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de FlexBox</h1>
+    <h2>flex-start</h2>
+    <div class="container1">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>flex-end</h2>
+    <div class="container2">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>center</h2>
+    <div class="container3">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>space-between</h2>
+    <div class="container4">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>space-evenly</h2>
+    <div class="container5">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>space-around</h2>
+    <div class="container6">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>stretch</h2>
+    <div class="container7">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>flex-start</h2>
+    <div class="container8">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>flex-end</h2>
+    <div class="container9">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+    <br>
+    <h2>center</h2>
+    <div class="container10">
+        <div class="item"> A</div>
+        <div class="item"> B</div>
+        <div class="item"> C</div>
+        <div class="item"> D</div>
+        <div class="item"> E</div>
+        <div class="item"> F</div>
+        <div class="item"> G</div>
+    </div>
+</body>
+</html>
