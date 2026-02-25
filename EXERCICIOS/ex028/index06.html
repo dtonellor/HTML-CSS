@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBox</title>
+    <title>FlexBox Order</title>
     <style>
         div.container {
             background-color: aqua;
             display: flex;
+            height: 400px;
+            align-items: flex-start;
         }
 
         div.item {
             background-color: blue;
-            flex: auto;
             border: 1px solid black;
             text-align: center;
+            padding: 20px;
+            flex-flow: row wrap;
+        }
+
+        div#i1 {
+            align-self: auto;
+        }
+        div#i2 {
+            align-self: flex-start;
+        }
+        div#i3 {
+            align-self: flex-end;
+        }
+        div#i4 {
+            align-self: center;
+        }
+        div#i5 {
+            align-self: stretch;
         }
     </style>
 </head>
@@ -22,12 +41,12 @@
     <h1>Teste de FlexBox</h1>
     <div class="container">
         <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item" style="order: -2;" id="i1">B</div>
+        <div class="item" style="order: 4;" id="i2">C</div>
+        <div class="item" style="order: -1;" id="i3">D</div>
+        <div class="item" style="order: 8;" id="i4">E</div>
+        <div class="item" style="order: 2;" id="i5">F</div>
+        <div class="item" style="order: 3;">G</div>
     </div>
 </body>
 </html>
